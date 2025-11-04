@@ -1,0 +1,104 @@
+/* Body and general font */
+body {
+  font-family: "Miltonian", serif;
+  background-color: #fff;
+  color: #000;
+}
+
+/* Buttons with hover pop/bounce */
+.btn, .list-group-item {
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.btn:hover, .list-group-item:hover {
+  transform: translateY(-8px) scale(1.08); /* Pop & lift effect */
+  box-shadow: 0 12px 25px rgba(0,0,0,0.35);
+  background-color: #ff4fa1;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Smooth bounce animation */
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
+
+.btn:hover, .list-group-item:hover {
+  animation: bounce 0.4s;
+}
+
+/* Custom Bootstrap tooltip overrides */
+.tooltip-inner {
+  background-color: #ff4fa1 !important; /* Pink background */
+  color: #fff !important;               /* White text */
+  font-size: 1rem;
+  font-family: "Miltonian", serif;
+  padding: 10px 15px;
+  border-radius: 10px;
+  max-width: 250px;
+  text-align: center;
+}
+
+.tooltip.bs-tooltip-top .tooltip-arrow::before,
+.tooltip.bs-tooltip-bottom .tooltip-arrow::before,
+.tooltip.bs-tooltip-start .tooltip-arrow::before,
+.tooltip.bs-tooltip-end .tooltip-arrow::before {
+  border-top-color: #ff4fa1 !important;
+  border-bottom-color: #ff4fa1 !important;
+  border-left-color: #ff4fa1 !important;
+  border-right-color: #ff4fa1 !important;
+}
+
+/* Fade in/out animation for tooltip */
+.bs-tooltip-auto[data-bs-popper] {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: all 0.3s ease-in-out;
+}
+
+.bs-tooltip-auto.show[data-bs-popper] {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.bg-pink {
+  background-color: #ff4fa1 !important; /* Your pink shade */
+}
+.text-pink {
+  color: #ff4fa1 !important; /* Pink text where needed */
+}
+
+.btn-outline-dark {
+  border-color: #ff4fa1;
+  color: #ff4fa1;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-dark:hover {
+  background-color: #ff4fa1;
+  color: #fff;
+}
+
+.card-title.text-pink {
+  color: #ff4fa1;
+}
+
+/* Ensure navbar stays fixed */
+body {
+  padding-top: 100px; /* Adjust depending on navbar height */
+}
+
+/* Make navbar buttons bigger */
+.btn-lg {
+  font-size: 1.2rem;
+  padding: 0.6rem 1.2rem;
+}
+
+/* Maintain pink theme */
+.bg-pink {
+  background-color: #ff4fa1 !important;
+}
+.text-pink {
+  color: #ff4fa1 !important;
+}

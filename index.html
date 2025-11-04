@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fashion Designing</title>
+
+<!-- Google Font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Miltonian&display=swap" rel="stylesheet">
+
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Custom CSS -->
+<link rel="stylesheet" href="style.css">
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" defer></script>
+<script src="script.js" defer></script>
+</head>
+<body>
+<header class="bg-pink text-white py-3 fixed-top">
+  <nav class="container d-flex justify-content-center gap-3 flex-wrap">
+    <a href="index.html" class="btn btn-dark btn-lg">Home</a>
+    <a href="jobs_salary.html" class="btn btn-dark btn-lg">Careers & Salary</a>
+    <a href="future.html" class="btn btn-dark btn-lg">Future Scope</a>
+    <a href="education.html" class="btn btn-dark btn-lg">Education</a>
+    <a href="sustainability.html" class="btn btn-dark btn-lg">Sustainability</a>
+    <a href="faqs.html" class="btn btn-dark btn-lg">FAQs</a>
+  </nav>
+</header>
+
+<main class="container mt-5">
+  <!-- Hero Section -->
+  <div class="text-center my-5">
+    <button type="button" class="btn btn-outline-dark btn-lg mb-3" data-bs-toggle="tooltip" data-bs-placement="top" title="Fashion designing is about creativity, innovation, and shaping trends. Explore careers, education, and sustainability in this field.">
+      Welcome to the World of Fashion Designing
+    </button>
+    <p class="mt-3" style="font-size:1.2rem;">
+      Fashion designing is not just about clothes; it’s an art, a career, and a lifestyle. From sketching your first designs to working with cutting-edge technology, the world of fashion is vibrant, creative, and constantly evolving.
+    </p>
+  </div>
+
+  <!-- What is Fashion Designing -->
+  <div class="card mb-4 shadow-sm">
+    <div class="card-body">
+      <h2 class="card-title text-pink" data-bs-toggle="tooltip" data-bs-placement="top" title="Fashion designing combines art, textiles, trends, and personal style to create clothing and accessories.">What is Fashion Designing?</h2>
+      <p class="card-text" style="font-size:1.1rem;">
+        Fashion designing is the art of creating clothing and accessories that are functional, aesthetically pleasing, and trend-setting. Designers combine creativity, color theory, fabric knowledge, and cultural influences to create pieces that express individuality, style, and innovation. Fashion designing also involves studying market trends, consumer behavior, and sustainability to ensure that designs are not only beautiful but also responsible and relevant.
+      </p>
+    </div>
+  </div>
+
+  <!-- Importance of Fashion -->
+  <div class="card mb-4 shadow-sm">
+    <div class="card-body">
+      <h2 class="card-title text-pink" data-bs-toggle="tooltip" data-bs-placement="top" title="Fashion influences lifestyle, culture, and the economy.">Why Fashion Matters</h2>
+      <p class="card-text" style="font-size:1.1rem;">
+        Fashion is more than clothing—it reflects culture, society, and personal identity. It has the power to inspire confidence, communicate personality, and even make statements about social issues or sustainability. Careers in fashion can be exciting, rewarding, and influential, offering opportunities to innovate, express creativity, and impact the world.
+      </p>
+    </div>
+  </div>
+
+  <!-- Explore Sections -->
+  <div class="card mb-4 shadow-sm text-center">
+    <div class="card-body">
+      <h2 class="card-title text-pink">Explore the World of Fashion</h2>
+      <p class="card-text" style="font-size:1.1rem;">
+        Hover over the sections below to learn more about fashion careers, education pathways, future trends, and sustainability.
+      </p>
+      <div class="d-flex flex-wrap justify-content-center gap-3 mt-3">
+        <button type="button" class="btn btn-outline-dark btn-lg" data-bs-toggle="tooltip" data-bs-placement="top" title="Discover various careers in fashion designing along with their salaries and roles.">
+          Careers & Salary
+        </button>
+        <button type="button" class="btn btn-outline-dark btn-lg" data-bs-toggle="tooltip" data-bs-placement="top" title="Learn about emerging trends, technology in fashion, and future scope of the industry.">
+          Future Scope
+        </button>
+        <button type="button" class="btn btn-outline-dark btn-lg" data-bs-toggle="tooltip" data-bs-placement="top" title="Find courses, colleges, and education pathways in fashion designing.">
+          Education
+        </button>
+        <button type="button" class="btn btn-outline-dark btn-lg" data-bs-toggle="tooltip" data-bs-placement="top" title="Explore sustainable fashion practices, eco-friendly jobs, and green fashion innovations.">
+          Sustainability
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Call to Action -->
+  <div class="card mb-5 shadow-sm text-center">
+    <div class="card-body">
+      <h2 class="card-title text-pink" data-bs-toggle="tooltip" data-bs-placement="top" title="Start your journey in fashion designing today.">Get Started in Fashion</h2>
+      <p class="card-text" style="font-size:1.1rem;">
+        Whether you want to become a designer, stylist, textile scientist, or work in sustainable fashion, the opportunities are endless. Explore the pages above to start your journey into a creative, innovative, and exciting career in fashion.
+      </p>
+    </div>
+  </div>
+
+</main>
+
+<footer class="bg-dark text-white text-center py-3 mt-4">
+  &copy; 2025 Fashion Designing Guide
+</footer>
+
+<script>
+  // Initialize Bootstrap tooltips
+  document.addEventListener("DOMContentLoaded", function() {
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+      return new bootstrap.Tooltip(tooltipTriggerEl)
+    })
+  });
+</script>
+</body>
+</html>
